@@ -8,7 +8,7 @@ ENV PLANTUML_VERSION=1.2019.11
 
 RUN echo http://dl-cdn.alpinelinux.org/alpine/edge/main/ >> /etc/apk/repositories
 
-RUN apk add --no-cache doxygen=${DOXYGEN_VERSION} graphviz=${GRAPHVIZ_VERSION} curl \
+RUN apk add --no-cache doxygen=${DOXYGEN_VERSION} graphviz=${GRAPHVIZ_VERSION} fontconfig ttf-dejavu curl \
 	&& mkdir -p /opt/plantuml \
 	&& curl -L https://sourceforge.net/projects/plantuml/files/plantuml.${PLANTUML_VERSION}.jar/download -o /opt/plantuml/plantuml.jar \
 	&& apk del curl
