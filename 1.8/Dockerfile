@@ -10,4 +10,4 @@ ENV GRAPHVIZ_VERSION=2.40.1-r1
 
 RUN apk add --no-cache doxygen=${DOXYGEN_VERSION} graphviz=${GRAPHVIZ_VERSION} fontconfig ttf-dejavu font-ipa
 
-WORKDIR /work
+WORKDIR /data

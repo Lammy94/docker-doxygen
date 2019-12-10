@@ -11,10 +11,17 @@ Dockerfile to build a doxygen container image.
 
 ## Quick Start
 
-Mount the directory containing the Doxyfile and source files on `/work` and run the container.
+Mount the directory containing the Doxyfile and source files on `/data` and run the container.
 
 ```
-docker run -it --rm -v $PWD:/work nakatt/doxygen doxygen
+# Generate config file
+docker run -it --rm -v $PWD:/data nakatt/doxygen -g Doxyfile
+
+# Edit config file
+nano Doxyfile
+
+# Run doxygen
+docker run -it --rm -v $PWD:/data nakatt/doxygen
 ```
 
 ## Use variant images containing PlantUML
@@ -24,7 +31,7 @@ Images tagged with `plantuml` have PlantUML additionally installed. PlantUML is 
 When using PlantUML, add a following line in Doxyfile.
 
 ```
-PLANTUML_JAR_PATH = /opt/plantuml/plantuml.jar
+PLANTUML_JAR_PATH = $(PLANTUML_INSTALL_DIR)/plantuml.jar
 ```
 
 # Image Variants
