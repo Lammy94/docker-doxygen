@@ -4,7 +4,7 @@ LABEL maintainer="nakat-t <armaiti.wizard@gmail.com>" \
 
 ENV DOXYGEN_VERSION=1.8.16-r0
 ENV GRAPHVIZ_VERSION=2.40.1-r1
-ENV PLANTUML_VERSION=1.2019.11
+ENV PLANTUML_VERSION=1.2019.12
 
 RUN echo http://dl-cdn.alpinelinux.org/alpine/edge/main/ >> /etc/apk/repositories
 

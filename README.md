@@ -1,7 +1,7 @@
 # Supported tags
 
 * `latest`, `1.8`, `1.8.16`
-* `plantuml`, `1.8-plantuml`, `1.8.16-plantuml`, `1.8.16-plantuml-1.2019.11`
+* `plantuml`, `1.8-plantuml`, `1.8.16-plantuml`, `1.8.16-plantuml-1.2019.12`
 
 # Introduction
 
@@ -17,9 +17,11 @@ Mount the directory containing the Doxyfile and source files on `/work` and run 
 docker run -it --rm -v $PWD:/work nakatt/doxygen doxygen
 ```
 
-## Use PlantUML
+## Use variant images containing PlantUML
 
-PlantUML is installed in `/opt/plantuml/plantuml.jar`. When using PlantUML, add a following line in Doxyfile.
+Images tagged with `plantuml` have PlantUML additionally installed. PlantUML is installed in `/opt/plantuml/plantuml.jar`.
+
+When using PlantUML, add a following line in Doxyfile.
 
 ```
 PLANTUML_JAR_PATH = /opt/plantuml/plantuml.jar
