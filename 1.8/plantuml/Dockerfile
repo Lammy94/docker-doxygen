@@ -16,3 +16,4 @@ RUN apk add --no-cache doxygen=${DOXYGEN_VERSION} graphviz=${GRAPHVIZ_VERSION} f
 	&& apk del curl
 
 WORKDIR /data
+ENTRYPOINT ["doxygen"]
