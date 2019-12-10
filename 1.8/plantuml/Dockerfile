@@ -2,7 +2,7 @@ FROM openjdk:8-jre-alpine
 LABEL maintainer="nakat-t <armaiti.wizard@gmail.com>" \
       description="Docker image for Doxygen documentation generator."
 
-ENV DOXYGEN_VERSION=1.8.16-r0
+ENV DOXYGEN_VERSION=1.8.16-r1
 ENV GRAPHVIZ_VERSION=2.40.1-r1
 ENV PLANTUML_VERSION=1.2019.12
 
