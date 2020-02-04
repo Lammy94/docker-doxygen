@@ -6,7 +6,7 @@ RUN echo http://dl-cdn.alpinelinux.org/alpine/edge/main/ >> /etc/apk/repositorie
 RUN echo http://dl-cdn.alpinelinux.org/alpine/edge/community/ >> /etc/apk/repositories
 RUN echo http://dl-cdn.alpinelinux.org/alpine/edge/testing/ >> /etc/apk/repositories
 
-ENV DOXYGEN_VERSION=1.8.16-r1
+ENV DOXYGEN_VERSION=1.8.17-r0
 ENV GRAPHVIZ_VERSION=2.40.1-r1
 ENV PLANTUML_VERSION=1.2019.12
 ENV PLANTUML_INSTALL_DIR=/opt/plantuml
