@@ -4,7 +4,7 @@ set -eu
 
 repo_name=${IMAGE_NAME:0:$(expr index "$IMAGE_NAME" :)-1}
 
-for tag in {1.8-planutml,1.8.17-planutml,1.8.17-planutml-1.2019.12}; do
+for tag in {1.8-planutml,1.8.17-planutml,1.8.17-planutml-1.2020.0}; do
     docker tag $IMAGE_NAME ${repo_name}:${tag}
     docker push ${repo_name}:${tag}
 done
