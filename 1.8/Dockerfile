@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM alpine:3.11
 LABEL maintainer="nakat-t <armaiti.wizard@gmail.com>" \
       description="Docker image for Doxygen documentation generator."
 
