@@ -8,7 +8,7 @@ RUN echo http://dl-cdn.alpinelinux.org/alpine/edge/testing/ >> /etc/apk/reposito
 
 ENV DOXYGEN_VERSION=1.8.17-r0
 ENV GRAPHVIZ_VERSION=2.40.1-r1
-ENV PLANTUML_VERSION=1.2020.0
+ENV PLANTUML_VERSION=1.2020.1
 ENV PLANTUML_INSTALL_DIR=/opt/plantuml
 
 RUN apk add --no-cache doxygen=${DOXYGEN_VERSION} graphviz=${GRAPHVIZ_VERSION} fontconfig font-noto font-noto-emoji font-noto-cjk curl \
