@@ -1,7 +1,7 @@
 # Supported tags
 
-* `latest`, `1.8`, `1.8.20`
-* `plantuml`, `1.8-plantuml`, `1.8.20-plantuml`, `1.8.20-plantuml-1.2020.15`
+* `latest`, `1.11`, `1.11.0`
+* `plantuml`, `1.11-plantuml`, `1.11.0-plantuml`, `1.11.0-plantuml-1.2025.4`
 
 # Introduction
 
