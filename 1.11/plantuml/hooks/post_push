@@ -4,7 +4,7 @@ set -eu
 
 repo_name=${IMAGE_NAME:0:$(expr index "$IMAGE_NAME" :)-1}
 
-for tag in {1.8.20,latest}; do
+for tag in {1.11-plantuml,1.11.0-plantuml,1.11.0-plantuml-1.2025.4}; do
     docker tag $IMAGE_NAME ${repo_name}:${tag}
     docker push ${repo_name}:${tag}
 done
